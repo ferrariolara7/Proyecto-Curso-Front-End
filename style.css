@@ -1,0 +1,434 @@
+* { /* aplicar a todos los elementos*/
+  box-sizing: border-box;  /* define cómo se calcula el tamaño de las cajas */
+}
+
+body{
+    margin: 0; /*saca el espacio por defecto*/
+    background-color: #fdfbf7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo img{
+   height: 60px;
+}
+header{
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+   padding: 0 60px;
+  background-color: #ffffff;  
+  border-bottom: 2px solid  #e6d2b5;
+}
+.menu ul{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+.menu a{
+    text-decoration: none;
+    color: #2d4a2d;
+    font-size: 18px;
+    font-weight: 600;
+}
+.accionesIconos {
+   display: flex;
+   gap: 25px;
+   font-size: 22px;
+}
+.accionesIconos img {
+    height: 25px;
+}
+.hero{
+    background-color: #a3b899;
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-box {
+  background: #ffffff;
+  width: 60%;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+.tag{
+    color:#a3b899;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.hero-box h1{
+    color: #2d4a2d;
+    font-size: 48px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+.desc {
+  color: #555;
+  font-size: 18px;
+  margin-bottom: 30px;
+  max-width: 600px;  /* evita líneas muy largas */
+  line-height: 1.6;
+}
+
+.btn {
+  background:#5c8d5c;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.btn:hover { /*sube y aparece una sombra cuando lo tocas*/
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+.categorias-box {
+    width: 70%;
+    margin: 50px auto;  /* con auto se centra horizontalmente */
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    border-radius: 20px;
+    border: 2px solid #ead8bd;
+}
+.categoria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.icono-categoria {
+    margin-top: 12px;
+    width: 90px;
+    height: 90px;
+
+    border: 4px solid#e6d2b5;
+    border-radius: 50%;
+    background-color: #fdfbf7;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 15px;
+
+    transition: all 0.2s ease;
+}
+.icono-categoria svg {
+    width: 38px;
+    height: 38px;
+    color: #5c8d5c;
+    transition: 0.2s;
+}
+.categoria h3 {
+    margin-top: 2px;
+    font-size: 20px;
+    color: #555;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.categoria:hover .icono-categoria {
+    color:#ffffff;
+}
+
+.categoria:hover svg {
+    color: white;
+}
+
+.productos {
+    padding: 90px 0;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.productos h2 {
+    color: #29482c;
+    font-size: 34px;
+    margin-bottom: 50px;
+    text-decoration-line: underline;
+}
+.productos-grid {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+.producto-card {
+    background: #fdfbf7;
+    border-radius: 18px;
+    padding: 25px;
+    text-align: left;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+.producto-card h3{
+    color: #555;
+}
+.producto-card p{
+    color: #7d7979;
+}
+.producto-img {
+    height: 160px;
+    background: #f3f3f3;
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 15px;
+}
+.producto-card button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 2px solid #5c8d5c;
+    background: transparent;
+    color: #5c8d5c;
+    font-weight: 600;
+    cursor: pointer;
+}
+.productos a{
+    color: #29482c;
+    display: inline-block;
+    margin-top: 80px;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+.productos a:hover{
+    color:#5c8d5c;
+}
+.footer-container {
+    width: 70%;
+    margin: 0 auto;
+    align-items: flex-start;
+    display: flex;              
+    justify-content: space-between;
+    gap: 40px;
+}
+.footer-columna {
+    flex: 1;
+}
+.footer-columna nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.footer{
+    background-color: rgba(41, 72, 44, 0.3);
+    padding: 60px 0;
+    opacity: 0.6;
+}
+.footer-container p{
+    color: rgba(45, 74, 45, 0.8);
+    font-size: 15px;
+}
+.footer-columna a{
+     color: rgba(45, 74, 45, 0.9);
+    text-decoration: none;
+}
+.footer-columna a:hover{ 
+    color:#ffffff;
+}
+.contacto-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.contacto-item svg {
+    width: 18px;
+    height: 18px;
+    color: rgba(45, 74, 45, 0.8);
+}
+
+.loginPage{
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+}
+
+.loginBox {
+  width: 400px;
+  background-color: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.loginBox h1{
+    font-size: 40px;
+    color: #2d4a2d;
+    text-align: center; 
+    margin: 5px 0 5px 0; /*el margen de abajo*/
+}
+.loginBox p{
+    font-size: 15px;
+    color: #555;
+    text-align: center; 
+    margin-top: 0;
+}
+
+.loginBox button{
+    width: 100%;
+    padding: 14px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer; /*Define qué forma tiene el mouse cuando pasás por un elemento.*/
+    background-color: #5c8d5c;
+    color:#ffffff;
+    padding: 7px 9px;
+    border: none;
+    border-radius: 12px;
+    align-content: center;
+     box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+ .contra label, /* se pone , y se pueden usar varias clases en especifico*/
+ .usuario label{
+    color:#2c2b2b;
+    text-align:left;
+    font-size: 15px;
+    display: block; /*para que se comporten como bloques y esten arriba de los input*/ 
+    }
+
+.usuario input,
+.contra input {
+  margin-bottom: 10px;  
+  width: 100%; /*input ocupe todo el ancho disponible dentro de la caja*/
+  padding: 9px 10px; /*Le da espacio interno al input 9px → arriba y abajo 10px → izquierda y derecha*/
+  border-radius: 10px; /*Redondea las esquinas del input*/
+  border: 1px solid #e6d2b5; /*1px → grosor solid → línea continua #e6d2b5 → color beige*/
+  font-size: 14px;
+  outline: none;
+}
+.opciones{
+   margin-top: 10px;
+  display: flex; /*pone todo en una fila*/
+  justify-content: space-between; /*uno se va a la izquierda el otro a la derecha*/
+  align-items: center; 
+  
+}
+.opciones a,
+.registro a{
+    color:#5c8d5c;
+    text-decoration: none;
+    
+}
+
+.opciones a:hover,
+.registro a:hover{
+    text-decoration: underline;
+}
+
+.loginIcon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.loginIcon img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.nuestraHistoriaBox {
+    background-color: #a3b899;
+    padding: 100px 20px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.nuestraHistoriaBox h1{
+    color: #2d4a2d;
+    font-size: 50px;
+}
+
+.nuestraHistoriaBox p{
+    color: #2d4a2d;
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+.quienesSomos {
+  width: 75%;
+  margin: 60px auto;
+  padding: 50px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.textoQuienes {
+  width: 45%;
+}
+.textoQuienes h3{
+    color: #5c8d5c;
+    font-size: 15px;
+     margin-bottom: 10px;
+}
+.textoQuienes h2{
+    color: #2d4a2d;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+.textoQuienes p{
+    color:#555;
+    font-size: 15px;
+    line-height: 1.6; /*interlineado*/
+
+}
+.imagenQuienes {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+}
+
+.imagenQuienes img {
+  width: 100%;
+  max-width: 420px;
+}
+
+.pilaresGrid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  background-color: #ffffff;
+}
+
+.pilarCard {
+  background-color:#fdfbf7;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  margin-top: 25px;
+  padding: 30px;        /*espacio interno */
+  width: 280px;         /*tamaño fijo */
+  text-align: center;   /*centra el contenido */
+  margin-bottom: 25px;
+}
+
+.pilarCard h3{
+    color: #5c8d5c;
+    font-size: 25px;
+}
+.pilarCard p{
+    color: #555;
+    font-size: 15px;
+}

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> <!--para conectar con el css-->
+    <title>Vigeo</title>
+</head>
+<body>
+    <header> <!--define que es el encabezado-->
+        <div class="logo">
+            <img src="img/vigeo.jpg" alt="vigeo">
+        </div>
+        <nav class="menu">
+                <ul>
+                    <li> <a href="index.html">Inicio</a></li>
+                    <li><a href="tienda.html">Tienda</a></li>
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                </ul>
+            </nav>
+
+        <div class="accionesIconos">
+            <a href="login.html">
+                <img src="img/persona.png" alt="Ingresar">
+            </a>
+            <a href="#">
+                <img src="img/carrito.png" alt="Carrito">
+            </a>
+        </div>
+
+    </header>
+    <section class="hero">
+       <div class="hero-box">
+        <p class="tag">100% NATURAL</p>
+        <h1>Nutri tu vida con la esencia de la naturaleza.</h1>
+        <p class="desc">
+             Encontrá en Vigeo la mejor selección de productos orgánicos, frutos secos, opciones sin TACC y especias a granel.
+        </p>
+        <a href="tienda.html" class="btn">Explorar tienda →</a>
+       </div>
+    </section>
+    <section class="categorias"> 
+        <div class="categorias-box"> 
+            <div class="categoria">
+                 <div class="icono-categoria"> 
+                    <i data-lucide="nut"></i> 
+                </div> <h3>Granel</h3> 
+            </div>
+             <div class="categoria"> 
+                <div class="icono-categoria"> 
+                    <i data-lucide="wheat-off"></i> 
+                </div> 
+                <h3>Sin TACC</h3> 
+            </div>
+             <div class="categoria">
+                 <div class="icono-categoria">
+                     <i data-lucide="heart"></i>
+                     </div>
+                      <h3>Apto Diabeticos</h3>
+                     </div>
+                      <div class="categoria">
+                         <div class="icono-categoria">
+                             <i data-lucide="shopping-bag"></i>
+                             </div> 
+                             <h3>Almacen</h3> 
+                            </div> 
+                            <div class="categoria">
+                                 <div class="icono-categoria">
+                                     <i data-lucide="flask-conical"></i>
+                                     </div> 
+                                     <h3>Suplementos</h3> 
+                                    </div> 
+                                </div> 
+                            </section>
+ <section class="productos">
+    <h2>Los Favoritos de la Comunidad</h2>
+
+    <div class="productos-grid">
+
+        <div class="producto-card">
+            <div class="producto-img">
+                <span>Imagen</span>
+            </div>
+            <p class="producto-categoria">Frutos Secos</p>
+            <h3>Almendras</h3>
+            <p class="precio">$4.500 <span>/ 500g</span></p>
+            <button>+ Agregar</button>
+        </div>
+
+        <div class="producto-card">
+            <div class="producto-img">
+                <span>Imagen</span>
+            </div>
+            <p class="producto-categoria">Mix & Semillas</p>
+            <h3>Mix Desayuno Energético</h3>
+            <p class="precio">$3.200 <span>/ 500g</span></p>
+            <button>+ Agregar</button>
+        </div>
+
+        <div class="producto-card">
+            <div class="producto-img">
+                <span>Imagen</span>
+            </div>
+            <p class="producto-categoria">Snacks</p>
+            <h3>Galletas de Arroz</h3>
+            <p class="precio">$2.600 <span>/ 500g</span></p>
+            <button>+ Agregar</button>
+        </div>
+
+        <div class="producto-card">
+            <div class="producto-img">
+                <span>Imagen</span>
+            </div>
+            <p class="producto-categoria">Suplementos</p>
+            <h3>Creatina</h3>
+            <p class="precio">$5.000 <span>/ 500g</span></p>
+            <button>+ Agregar</button>
+        </div>
+        
+    </div>
+     <a href="tienda.html" class="ver-todo">Ver todos los productos</a> <!--hipervinculo a tienda-->
+</section>
+
+
+
+<!--Pie de page-->
+<footer class="footer">
+
+    <div class="footer-container">
+
+     <div class="footer-columna">
+        <p> Tu dietética de confianza.  
+        Acercando lo mejor de la naturaleza a tu mesa todos los días.</p>
+     </div>
+     <!--links segunda columna-->
+     <div class="footer-columna">
+        <nav>
+            <a href="#"> Sobre Nosotros </a>
+            <a href="#"> Politicas de Envio </a>
+            <a href="#"> Preguntas Frecuentes </a>
+            <a href="#"> Terminos y Condiciones </a>
+        </nav>
+     </div>
+
+     <!--Contacto tercera columna-->
+     <div class="footer-columna">
+
+    <p class="contacto-item">
+        <i data-lucide="map-pin"></i>
+        Dirección
+    </p>
+
+    <p class="contacto-item">
+        <i data-lucide="phone"></i>
+        Teléfono
+    </p>
+
+    <p class="contacto-item">
+        <i data-lucide="mail"></i>
+        Mail
+    </p>
+     </div>
+
+     <!-- aca tmb podriamos agregar para que pongan su mail y asi recibis promos especiales-->
+    </div>
+</footer>
+<!-- el script llama a la libreria, siempre tiene que ir a lo ultimo-->
+<!-- para poder usar los iconos de la libreria lucide-->
+    <script src="https://unpkg.com/lucide@latest"></script>
+<script>
+  lucide.createIcons();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vigeo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/vigeo.jpg" alt="vigeo">
+        </div>
+        <nav class="menu">
+                <ul>
+                    <li> <a href="index.html">Inicio</a></li>
+                    <li><a href="tienda.html">Tienda</a></li>
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                </ul>
+            </nav>
+
+        <div class="accionesIconos">
+            <a href="login.html">
+                <img src="img/persona.png" alt="Ingresar">
+            </a>
+            <a href="#">
+                <img src="img/carrito.png" alt="Carrito">
+            </a>
+        </div>
+    </header>
+    <main class="sobreNosotros">
+
+         <section class="nuestraHistoriaBox">
+            <h1> Nuestra Historia </h1>
+            <p> Nacimos con la idea de.... </p>
+         </section>
+
+        <section class="quienesSomos">
+            <div class="textoQuienes">
+               <h3>¿QUIÉNES SOMOS?</h3>
+               <h2>De Vigeo a tu hogar</h2>
+               <p>En Vigeo creemos que...</p>
+            </div>
+
+        <div class="imagenQuienes">
+             <img src="img/localVigeo.webp" alt="Local de Vigeo">
+         </div>
+
+        </section>
+
+        <section class="pilares">
+            <div class="pilaresGrid"> <!--Agrupa las card (Grid=contenedor)-->
+
+              <div class="pilarCard">
+                  <h3>Precios Justos</h3>
+                  <p> El mejor precio...</p>
+              </div>
+
+              <div class="pilarCard">
+                  <h3>Calidad Premium</h3>
+                  <p> Los mejores productos...</p>
+              </div>
+
+              <div class="pilarCard">
+                  <h3>Otro pilar</h3>
+                  <p> Mini descripcion...</p>
+              </div>
+
+            </div>
+        </section>
+    </main>
+    <!--Pie de page-->
+<footer class="footer">
+
+    <div class="footer-container">
+
+     <div class="footer-columna">
+        <p> Tu dietética de confianza.  
+        Acercando lo mejor de la naturaleza a tu mesa todos los días.</p>
+     </div>
+     <!--links segunda columna-->
+     <div class="footer-columna">
+        <nav>
+            <a href="#"> Sobre Nosotros </a>
+            <a href="#"> Politicas de Envio </a>
+            <a href="#"> Preguntas Frecuentes </a>
+            <a href="#"> Terminos y Condiciones </a>
+        </nav>
+     </div>
+
+     <!--Contacto tercera columna-->
+     <div class="footer-columna">
+
+    <p class="contacto-item">
+        <i data-lucide="map-pin"></i>
+        Dirección
+    </p>
+
+    <p class="contacto-item">
+        <i data-lucide="phone"></i>
+        Teléfono
+    </p>
+
+    <p class="contacto-item">
+        <i data-lucide="mail"></i>
+        Mail
+    </p>
+     </div>
+
+     <!-- aca tmb podriamos agregar para que pongan su mail y asi recibis promos especiales-->
+    </div>
+</footer>
+<!-- el script llama a la libreria, siempre tiene que ir a lo ultimo-->
+<!-- para poder usar los iconos de la libreria lucide-->
+    <script src="https://unpkg.com/lucide@latest"></script>
+<script>
+  lucide.createIcons();
+</script>
+    
+</body>
+</html>

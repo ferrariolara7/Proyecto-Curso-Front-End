@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Vigeo</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/vigeo.jpg" alt="vigeo">
+        </div>
+        <nav class="menu">
+                <ul>
+                    <li> <a href="index.html">Inicio</a></li>
+                    <li><a href="tienda.html">Tienda</a></li>
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                </ul>
+            </nav>
+
+        <div class="accionesIconos">
+            <a href="login.html">
+                <img src="img/persona.png" alt="Ingresar">
+            </a>
+            <a href="#">
+                <img src="img/carrito.png" alt="Carrito">
+            </a>
+        </div>
+    </header>
+    <main class="loginPage">
+        
+    <form class="loginBox">
+
+        <div class="loginIcon">
+        <img src="img/logo.jpg" alt="logo">
+       </div>
+
+        <h1> Hola de nuevo! </h1>
+        <p>Ingresá a tu cuenta para continuar</p>
+
+        <div class="usuario">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" placeholder="tu@email.com">
+        </div>
+        <div class="contra">
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" placeholder="••••••">
+        </div>        
+        <div class="opciones">
+            <label>
+                <input type="checkbox">
+                Recordarme
+            </label>
+
+              <a href="#">¿Olvidaste tu clave?</a>
+
+        </div>
+        <button type="submit">Ingresar →</button>
+
+        <p class="registro">
+        ¿No tenés una cuenta?
+        <a href="#">Registrate gratis</a>
+      </p>
+       
+    </form>
+    </main>
+
+    <!--Pie de page-->
+<footer class="footer">
+
+    <div class="footer-container">
+
+     <div class="footer-columna">
+        <p> Tu dietética de confianza.  
+        Acercando lo mejor de la naturaleza a tu mesa todos los días.</p>
+     </div>
+     <!--links segunda columna-->
+     <div class="footer-columna">
+        <nav>
+            <a href="#"> Sobre Nosotros </a>
+            <a href="#"> Politicas de Envio </a>
+            <a href="#"> Preguntas Frecuentes </a>
+            <a href="#"> Terminos y Condiciones </a>
+        </nav>
+     </div>
+
+     <!--Contacto tercera columna-->
+     <div class="footer-columna">
+
+    <p class="contacto-item">
+        <i data-lucide="map-pin"></i>
+        Dirección
+    </p>
+
+    <p class="contacto-item">
+        <i data-lucide="phone"></i>
+        Teléfono
+    </p>
+
+    <p class="contacto-item">
+        <i data-lucide="mail"></i>
+        Mail
+    </p>
+     </div>
+
+     <!-- aca tmb podriamos agregar para que pongan su mail y asi recibis promos especiales-->
+    </div>
+</footer>
+<!-- el script llama a la libreria, siempre tiene que ir a lo ultimo-->
+<!-- para poder usar los iconos de la libreria lucide-->
+    <script src="https://unpkg.com/lucide@latest"></script>
+<script>
+  lucide.createIcons();
+</script>
+
+</body>
+</html>
