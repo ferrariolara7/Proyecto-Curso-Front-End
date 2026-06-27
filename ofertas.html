@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-     <link rel="stylesheet" href="style.css"> <!--para conectar con el css-->
+    <link rel="stylesheet" href="style.css"> <!--para conectar con el css-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
@@ -30,60 +30,40 @@
         </div>
 
     </header>
-    <main class="tienda">
-  <section class="tienda-hero">
-    <h1>Tienda</h1>
-    <p>Conocé nuestros productos naturales y saludables.</p>
-  </section>
+    <main class="ofertas">
+    <section class="ofertas-hero">
+        <h1>Ofertas</h1>
+        <p>Aprovechá descuentos exclusivos en productos seleccionados.</p>
+    </section>
 
- <section class="banner-ofertas">
-    <div class="banner-contenido">
-        <h2>🔥 ¡No te pierdas nuestras ofertas!</h2>
-        <p>Encontrá descuentos exclusivos en productos seleccionados.</p>
+    <section class="ofertas-grid">
+        <article class="oferta-card">
+            <span class="descuento">-20%</span>
+            <img src="img/granola.webp" alt="Granola natural">
+            <h3>Granola Natural</h3>
+            <p class="precio-anterior">$3000</p>
+            <p class="precio-oferta">$2400</p>
+            <button class="btn-agregar">Agregar al carrito</button>
+        </article>
 
-        <a href="ofertas.html" class="btn-ofertas">
-            Ver ofertas
-        </a>
-    </div>
-</section>
+        <article class="oferta-card">
+            <span class="descuento">-15%</span>
+            <img src="img/mixFrutosSecos.jpg" alt="Mix de frutos secos">
+            <h3>Mix de Frutos Secos</h3>
+            <p class="precio-anterior">$3800</p>
+            <p class="precio-oferta">$3230</p>
+            <button class="btn-agregar">Agregar al carrito</button>
+        </article>
 
-  <section class="tienda-filtros">
-    <input type="text" id="buscador" placeholder="Buscar producto...">
-
-    <select id="filtro-categoria">
-      <option value="todos">Todos</option>
-      <option value="snacks">Snacks</option>
-      <option value="cereales">Cereales</option>
-      <option value="bebidas">Bebidas</option>
-      <option value="sin-tacc">Sin TACC</option>
-    </select>
-  </section>
-
-  <section class="productos-grid" id="contenedor-productos">
-    <article class="producto-card">
-      <img src="img/granola.webp" alt="Granola natural">
-      <h3>Granola Natural</h3>
-      <p class="producto-precio">$2500</p>
-      <button class="btn-agregar">Agregar al carrito</button>
-    </article>
-
-    <article class="producto-card">
-      <img src="img/mixFrutosSecos.jpg" alt="Mix de frutos secos">
-      <h3>Mix de Frutos Secos</h3>
-      <p class="producto-precio">$3200</p>
-      <button class="btn-agregar">Agregar al carrito</button>
-    </article>
-
-    <article class="producto-card">
-      <img src="img/barritaDeCereal.webp" alt="Barrita de cereal">
-      <h3>Barrita de Cereal</h3>
-      <p class="producto-precio">$900</p>
-      <button class="btn-agregar">Agregar al carrito</button>
-    </article>
-
-    
-</section>
-  </section>
+        <article class="oferta-card">
+            <span class="descuento">-30%</span>
+            <img src="img/barritaDeCereal.webp" alt="Barrita de cereal">
+            <h3>Barrita de Cereal</h3>
+            <p class="precio-anterior">$1200</p>
+            <p class="precio-oferta">$840</p>
+            <button class="btn-agregar">Agregar al carrito</button>
+        </article>
+    </section>
 </main>
 <!--Pie de page-->
 <footer class="footer">
