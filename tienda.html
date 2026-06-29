@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
      <link rel="stylesheet" href="style.css"> <!--para conectar con el css-->
+     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
@@ -59,31 +60,15 @@
     </select>
   </section>
 
-  <section class="productos-grid" id="contenedor-productos">
-    <article class="producto-card">
-      <img src="img/granola.webp" alt="Granola natural">
-      <h3>Granola Natural</h3>
-      <p class="producto-precio">$2500</p>
-      <button class="btn-agregar">Agregar al carrito</button>
-    </article>
+  <section class="productos-grid" id="contenedor-productos"></section>   
 
-    <article class="producto-card">
-      <img src="img/mixFrutosSecos.jpg" alt="Mix de frutos secos">
-      <h3>Mix de Frutos Secos</h3>
-      <p class="producto-precio">$3200</p>
-      <button class="btn-agregar">Agregar al carrito</button>
-    </article>
-
-    <article class="producto-card">
-      <img src="img/barritaDeCereal.webp" alt="Barrita de cereal">
-      <h3>Barrita de Cereal</h3>
-      <p class="producto-precio">$900</p>
-      <button class="btn-agregar">Agregar al carrito</button>
-    </article>
-
-    
-</section>
   </section>
+
+  <section class="api-productos">
+    <h2>Productos recomendados</h2>
+    <div id="productos-api" class="productos-grid"></div>
+</section>
+
 </main>
 <!--Pie de page-->
 <footer class="footer">
@@ -132,5 +117,6 @@
 <script>
   lucide.createIcons();
 </script>
+<script src="script.js"></script>
 </body>
 </html>

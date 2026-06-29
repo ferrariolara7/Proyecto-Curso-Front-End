@@ -686,3 +686,12 @@ header{
     cursor:pointer;
 
 }
+
+.api-productos {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.api-productos h2 {
+    margin-bottom: 25px;
+}
