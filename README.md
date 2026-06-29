@@ -27,5 +27,3 @@ Aplicar conocimientos de desarrollo web frontend mediante la creación de un sit
 👩‍💻 Autora
 Lara Ferrario
 
-📎 Estado del proyecto
-En desarrollo 🚧
